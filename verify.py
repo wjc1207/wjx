@@ -50,7 +50,9 @@ def verifyByALOHA(wd):
         tag += 1
         if tag > 5:
             time.sleep(random.randint(1,30)) #wait
-            
+        elif tag > 60:
+            break 
+
 def verifyByCSMA(wd,channelState):
     lock.acquire()
     while(True):
@@ -100,7 +102,7 @@ def verifyByCSMA(wd,channelState):
         time.sleep(1)
         tag += 1
         if tag > 5:
-            time.sleep(random.randint(1,30))
+            time.sleep(random.randint(1,30)) #wait
             break
     
     channelState[0] = True
