@@ -64,14 +64,14 @@ def autoFill(probability):
         #题目十一
         autofillques.autoFillSingleChoiceQues(wd,11,probability)
         wd.find_element(By.ID, "divNext").click()
-    time.sleep(random.random()*5)
+        time.sleep(random.random()*5)
     wd.find_element(By.ID, "ctlNext").click() #提交问卷
     time.sleep(3)
     #验证按钮和滑动条
     try:
         successMsg = wd.find_element(By.ID, "divdsc")
     except Exception:
-        verify.verifyByCSMA(wd,channelState)
+        verify.verifyByCSMA(wd,channelState=channelState)
 
     time.sleep(4) #休息4秒
     wd.quit()
