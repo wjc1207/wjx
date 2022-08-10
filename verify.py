@@ -13,7 +13,10 @@ def verifyByALOHA(wd):
     try:
         wd.find_element(By.XPATH, "/html/body/div[6]/div[2]/div[2]/button").click() #按“确定”按钮
     except Exception:
-        pass
+        try:
+            wd.find_element(By.XPATH, "/html/body/div[5]/div[2]/div[2]/button").click() #按“确定”按钮
+        except Exception:
+            pass
     time.sleep(random.random()*5)
     action = ActionChains(wd)
     #验证按钮和滑动条
@@ -64,9 +67,12 @@ def verifyByCSMA(wd,channelState):
     lock.release()
     #点击对话框里的确认
     try:
-        wd.find_element(By.XPATH, "/html/body/div[6]/div[2]/div[2]/button").click()
+        wd.find_element(By.XPATH, "/html/body/div[6]/div[2]/div[2]/button").click() #按“确定”按钮
     except Exception:
-        pass
+        try:
+            wd.find_element(By.XPATH, "/html/body/div[5]/div[2]/div[2]/button").click() #按“确定”按钮
+        except Exception:
+            pass
     time.sleep(random.random()*5)
     action = ActionChains(wd)
     #验证按钮和滑动条
