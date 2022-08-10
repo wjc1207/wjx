@@ -19,7 +19,7 @@ def getWebDriver():
     options.add_experimental_option('useAutomationExtension', False)
 
     wd = webdriver.Chrome(options=options)
-    with open('wjx\stealth.min.js', 'r') as f:
+    with open('wjx-main\stealth.min.js', 'r') as f:
         js = f.read()
     wd.execute_cdp_cmd('Page.addScriptToEvaluateOnNewDocument', {'source': js})
     wd.execute_cdp_cmd('Page.addScriptToEvaluateOnNewDocument', {'source': """
