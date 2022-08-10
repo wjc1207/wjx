@@ -30,6 +30,13 @@ _________________
 2. 前往[https://chromedriver.storage.googleapis.com/index.html](https://chromedriver.storage.googleapis.com/index.html)下载对应的ChromeDriver，大版本号对应即可。目录中的是104版本的
 
 3. 将驱动**所在文件夹**地址添加到环境变量PATH中
+
+4. 运行测试文件wjxTest.py
+
+    `cd PATH/wjx-main`
+
+    `python wjxTest.py`
+
 _________________
 
 参考： [白月黑羽-Selenium教程](https://www.byhy.net/tut/auto/selenium/)。
