@@ -37,6 +37,7 @@ _________________
 
     `python wjxTest.py`
 
+5. 参考wjxExample.py，编写自己的wjxMain.py
 _________________
 
 参考： [白月黑羽-Selenium教程](https://www.byhy.net/tut/auto/selenium/)。
